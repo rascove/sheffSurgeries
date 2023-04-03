@@ -17,46 +17,46 @@ class BootStrap {
 
         def doctor = new com.sp2292.sas.model.Doctor
         (
-            doctorName: 'Dr Sarah Macdonald',
+            name: 'Dr Sarah Macdonald',
+            email: 's.macdonald@myemail.com',
+            phone: '01111777',
             qualifications: 'MBChB(Sheffield)',
             position: 'GP, Surgeon',
-            doctorEmail: 's.macdonald@myemail.com',
             password: 'secret222',
             doctorOffice: 'D-9888',
-            doctorPhone: '01111777',
             bio: 'Lorem ipsum',
             surgery: surgery
         ).save()
 
         def patient = new com.sp2292.sas.model.Patient
         (
-            patientName: 'Tom Rivers',
+            name: 'Tom Rivers',
+            phone: '0114 222 4444',
             patientAddress: '2 One Way Street, Eckington',
             patientResidence: 'Sheffield, Barnsley, Doncaster',
             patientDOB: '1988-09-20',
             patientID: 'E25555',
             dateRegistered: '2021-02-26',
-            patientPhone: '0114 222 4444',
             surgery: surgery
         ).save()
 
         def receptionist = new com.sp2292.sas.model.Receptionist
         (
-            recepName: 'Rob Kingston',
-            recepEmail: 'r.kingston@email.com',
+            name: 'Rob Kingston',
+            email: 'r.kingston@email.com',
+            phone: '0114 222 4445',
             recepUsername: 'rking',
             recepPassword: 'secret2019',
-            recepPhone: '0114 222 4445',
             surgery: surgery
         ).save()
 
         def nurse = new com.sp2292.sas.model.Nurse
         (
-            nurseName: 'Susan Peters',
+            name: 'Susan Peters',
+            email: 's.peters@myemail.com',
+            phone: '0114 222 4433',
             qualifications: 'Registered General Nurse',
-            nurseEmail: 's.peters@myemail.com',
             nurseOffice: 'B-455',
-            nursePhone: '0114 222 4433',
             surgery: surgery
         ).save()
 

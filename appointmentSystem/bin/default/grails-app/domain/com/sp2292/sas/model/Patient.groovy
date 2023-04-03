@@ -1,35 +1,25 @@
 package com.sp2292.sas.model
 
-class Patient
+class Patient extends Person
 {
-    String patientName
     String patientAddress
     String patientResidence
     Date patientDOB
     String patientID
     Date dateRegistered
-    String patientPhone
-
-    String toString()
-    {
-        return patientName
-    }
 
     static constraints =
     {
-        patientName()
         patientAddress()
         patientResidence()
         patientDOB()
         patientID()
         dateRegistered()
-        patientPhone()
     }
-
-    static hasOne = [surgery: Surgery]
 
     static hasMany =
     [
+        surgeries: Surgery,
         appointments: Appointment,
         prescriptions: Prescription
     ]

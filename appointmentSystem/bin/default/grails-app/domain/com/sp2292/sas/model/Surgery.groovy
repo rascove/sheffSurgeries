@@ -28,12 +28,12 @@ class Surgery
         registeringNewPatients()
     }
 
+    static belongsTo = Patient
+    
     static hasMany =
     [
-        doctors: Doctor,
-        nurses: Nurse,
+        workers: Worker,
         patients: Patient,
-        receptionists: Receptionist,
         appointments: Appointment
     ]
 }
